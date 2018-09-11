@@ -45,9 +45,16 @@ if has("cscope")
         cs add $CSCOPE_DB
     endif
 
+    " use gtags-cscope
+    if filereadable("GTAGS")
+        let $GTAGSLABEL = 'native-pygments'
+        let $GTAGSCONF = '/usr/local/share/gtags/gtags.conf'
+        set csprg=gtags-cscope
+        cs add GTAGS
+    endif
+
     " show msg when any other cscope db added
     set cscopeverbose  
-
 
     """"""""""""" My cscope/vim key mappings
     "
