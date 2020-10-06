@@ -28,7 +28,7 @@
 " when it was compiled.  If it wasn't, time to recompile vim... 
 if has("cscope")
     " for cscope color
-    hi ModeMsg ctermfg=Green
+    hi ModeMsg ctermfg=42
     
     """"""""""""" Standard cscope/vim boilerplate
 
@@ -180,5 +180,3 @@ if has("cscope")
     "set ttimeoutlen=100
 
 endif
-
-
