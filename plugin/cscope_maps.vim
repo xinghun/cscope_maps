@@ -38,6 +38,9 @@ if has("cscope")
     " check cscope for definition of a symbol before checking ctags: set to 1
     " if you want the reverse search order.
     set csto=0
+    
+    " fix E568: duplicate cscope database not added
+    set nocscopeverbose
 
     " add any cscope database in current directory
     if filereadable("cscope.out")
